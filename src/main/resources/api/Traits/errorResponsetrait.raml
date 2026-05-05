@@ -1,0 +1,33 @@
+#%RAML 1.0 Trait
+responses:
+  400:
+    body:
+      application/json:
+        type:
+          properties:
+            message:
+              type: string
+              example: Bad Request
+            StatusCode:
+              type: number
+              example: 400
+  401:
+    body:
+      application/json:
+        example: Unauthorized
+  404:
+    body:
+      application/json:
+        example: Resource Not Found
+  405:
+    body:
+      application/json:
+        example: Method Not Found
+  415:
+    body:
+      application/json:
+        example: Unsupported Data format
+  500:
+    body:
+      application/json:
+        example: Internal Server Error

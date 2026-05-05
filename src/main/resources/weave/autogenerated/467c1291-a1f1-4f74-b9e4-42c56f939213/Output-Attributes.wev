@@ -1,0 +1,26 @@
+%dw 2.0
+
+type auto_467c1291_a1f1_4f74_b9e4_42c56f939213_Output_Attributes = {|
+  clientCertificate?: {|
+    publicKey?: {|  |}, 
+    "type"?: String, 
+    encoded?: Binary
+  |}, 
+  headers: {|
+    Ion_SourceSystem: String, 
+    Ion_SourceSubSytem: String
+  |}, 
+  listenerPath: String, 
+  method: String, 
+  queryParams: {|  |}, 
+  queryString: String, 
+  relativePath: String, 
+  remoteAddress: String, 
+  requestPath: String, 
+  requestUri: String, 
+  scheme: String, 
+  uriParams: {|  |}, 
+  version: String, 
+  localAddress: String
+|}
+

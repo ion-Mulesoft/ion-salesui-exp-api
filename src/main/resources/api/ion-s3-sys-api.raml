@@ -1,0 +1,49 @@
+#%RAML 1.0
+title: ion-s3-sys-api
+baseUri:  https://ion-s3-sys-api/v1
+protocols:
+  - HTTP
+  - HTTPS
+
+traits:
+  CustomHeaders:  !include Traits/CustomHeaderstrait.raml
+  CustomerErrorResponse:  !include /Traits/errorResponsetrait.raml
+
+uses: 
+  EmployeeLib: /exchange_modules/fe10e24e-119e-4431-8550-256ec0df6bd4/employeelibraries/1.0.1/employeelibraries.raml
+
+/ping:
+  get:
+    responses:
+      200:
+        body:
+          application/json:
+            example:
+              { "message" : "api is up and running "}
+
+/healthCheck:
+  get:
+    responses:
+      200:
+        body:
+          application/json:
+            example:
+              { "message" : "ion-s3-sys-api api is up and running",
+              "EndSysStatus" :  "Amozon s3 is up and running"}
+
+
+
+/employees:
+  post:
+    is:
+      - CustomHeaders
+      - CustomerErrorResponse
+    body:
+      application/json:
+        type: EmployeeLib.employeeRequest
+    responses:
+      201:
+        body:
+          application/json:
+            example:
+              { "message" : "coverted csv AND UPDATED TO s3"}

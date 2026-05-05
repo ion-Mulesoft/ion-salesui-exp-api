@@ -1,0 +1,26 @@
+%dw 2.0
+
+type auto_c98a6dfb_a738_4897_b6d9_872d800da40b_Input_Attributes = {|
+  clientCertificate?: {|
+    publicKey?: {|  |}, 
+    "type"?: String, 
+    encoded?: Binary
+  |}, 
+  headers: {|
+    Ion_SourceSystem: String, 
+    Ion_SourceSubSytem: String
+  |}, 
+  listenerPath: String, 
+  method: String, 
+  queryParams: {|  |}, 
+  queryString: String, 
+  relativePath: String, 
+  remoteAddress: String, 
+  requestPath: String, 
+  requestUri: String, 
+  scheme: String, 
+  uriParams: {|  |}, 
+  version: String, 
+  localAddress: String
+|}
+

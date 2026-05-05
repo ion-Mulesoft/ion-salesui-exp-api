@@ -1,0 +1,36 @@
+#%RAML 1.0 Library
+types:
+  employeeRequest:
+    properties:
+      firstName:
+        type: string 
+        description:  firstname of employee
+        example: Bryan
+      lastName: 
+        type : string | nil
+        description:  lastName of employee
+        example: Potter
+      age:
+        type: integer
+        description:  age of employee
+        example: 28
+      onboarded:
+        type: boolean
+        description:  Status of employee
+        example: true
+      salary:
+        type: number
+        description:  salary of employee in numbers
+        example: 15.5
+      in terms of Salary:
+        type: string
+        description:  salary of employee either it is monthly or annual
+        example: LPA
+    additionalProperties: false
+
+  EmployeeResponse:
+    properties:
+      message :
+        description:  after successful upload to S3 it fetches below message
+        type: string
+        example: Bryan Potter Data uploaded Successfully to S3
