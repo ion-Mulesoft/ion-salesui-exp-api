@@ -1,0 +1,12 @@
+http:
+  basePath: "/choice"
+  
+  
+api:  
+  id: "20258018"
+  
+  
+S3:
+  BucketName: "workerBucket"
+  S3.BuckeMessage: "updated successfully in "
+  
