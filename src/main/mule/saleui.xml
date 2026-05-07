@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd">
+	<flow name="saleuiFlow" doc:id="5b7549bd-1a5d-4cde-95db-fb744a675e87" >
+		<logger level="INFO" doc:name="Logger" doc:id="b5d510c8-03a1-47ed-9fb3-d4201f34e01d" />
+	</flow>
+</mule>
